@@ -33,6 +33,7 @@ const StateSearch = () => {
 
   return (
     <div>
+      <h2>State Search</h2>
       <div className="search-container">
         <input
           type="text"
