@@ -4,6 +4,8 @@ import BettingOdds from './components/BettingOdds';
 import BettingOdds2024 from './components/BettingOdds2024';
 import PollingVisualization from './components/PollingVisualization';
 import StateSearch from './components/StateSearch';
+import BettingOddsMap from "./components/BettingOddsMap";
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
       <BettingOdds2024 />
       <PollingVisualization />
       <StateSearch />
+      <BettingOddsMap />
     </div>
   );
 }
