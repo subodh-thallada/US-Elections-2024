@@ -1,0 +1,31 @@
+.betting-odds-2024 {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .betting-odds-2024 h2 {
+    color: #333;
+  }
+  
+  .betting-odds-2024 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .betting-odds-2024 th,
+  .betting-odds-2024 td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .betting-odds-2024 th {
+    background-color: #f4f4f4;
+  }
+  
+  .betting-odds-2024 tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
