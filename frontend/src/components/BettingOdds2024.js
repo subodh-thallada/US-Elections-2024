@@ -16,9 +16,21 @@ function BettingOdds2024() {
       });
   }, []);
 
+  const getRowStyle = (repOdds, demOdds) => {
+    // Convert odds to numbers for comparison
+    const repValue = parseFloat(repOdds);
+    const demValue = parseFloat(demOdds);
+    
+    if (repValue > demValue) {
+      return { backgroundColor: 'rgba(0, 0, 255, 0.05)' }; // Light red for Republican
+    } else if (demValue > repValue) {
+      return { backgroundColor: 'rgba(255, 0, 0, 0.05)' }; // Light blue for Democrat
+    }
+    return {}; // No tint if equal
+  };
+
   return (
     <div className="betting-odds-2024">
-      <h2>2024 Presidential Election Betting Odds</h2>
       <table>
         <thead>
           <tr>
@@ -29,7 +41,10 @@ function BettingOdds2024() {
         </thead>
         <tbody>
           {bettingOdds2024.map((item, index) => (
-            <tr key={index}>
+            <tr 
+              key={index}
+              style={getRowStyle(item.republican_odds, item.democrat_odds)}
+            >
               <td>{item.state}</td>
               <td>{item.republican_odds}</td>
               <td>{item.democrat_odds}</td>

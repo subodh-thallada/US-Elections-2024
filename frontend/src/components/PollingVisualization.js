@@ -66,7 +66,6 @@ const chartData = bettingOddsData.map(item => ({
 const PollingVisualization = () => {
   return (
     <div>
-      <h2>Polling Visualization</h2>
       <div style={{ height: '500px', width: '100%' }}>
         <ResponsiveContainer width="100%" height="100%">
           <BarChart data={chartData}>

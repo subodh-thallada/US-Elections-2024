@@ -170,7 +170,7 @@ const VotingMap = () => {
       [0, "#FF0000"], // Republican (Red)
       [1, "#0000FF"], // Democrat (Blue)
     ],
-    colorbar: { title: "Winner" },
+    showscale: false,
   };
 
   const winnerLayout = {
@@ -181,25 +181,38 @@ const VotingMap = () => {
     },
     title: "2024 U.S. Election Betting Odds: State-by-State Results",
     titlefont: { size: 20 },
+    annotations: [
+      {
+        x: 1,
+        y: 1,
+        xref: 'paper',
+        yref: 'paper',
+        text: '<span style="color: #FF0000;">■</span> Republican<br><span style="color: #0000FF;">■</span> Democrat',
+        showarrow: false,
+        font: {
+          size: 14
+        },
+        align: 'left'
+      }
+    ]
   };
 
   return (
     <div>
-      <h1>Betting Odds Maps</h1>
       <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-        <div>
-          <h2>Gradient Map</h2>
-          <Plot
-            data={[gradientMap]}
-            layout={gradientLayout}
-            style={{ width: "100%", height: "100%" }}
-          />
-        </div>
         <div>
           <h2>Winner Map</h2>
           <Plot
             data={[winnerMap]}
             layout={winnerLayout}
+            style={{ width: "100%", height: "100%" }}
+          />
+        </div>
+        <div>
+          <h2>Gradient Map</h2>
+          <Plot
+            data={[gradientMap]}
+            layout={gradientLayout}
             style={{ width: "100%", height: "100%" }}
           />
         </div>

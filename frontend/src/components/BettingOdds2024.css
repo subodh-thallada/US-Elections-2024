@@ -1,3 +1,4 @@
+
 .betting-odds-2024 {
     margin: 20px;
     font-family: Arial, sans-serif;
@@ -10,22 +11,35 @@
   .betting-odds-2024 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .betting-odds-2024 th,
-  .betting-odds-2024 td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
   }
   
   .betting-odds-2024 th {
-    background-color: #f4f4f4;
+    background-color: var(--navy-blue);
+    color: white;
+    padding: 12px;
+    text-align: left;
   }
   
-  .betting-odds-2024 tr:nth-child(even) {
-    background-color: #f9f9f9;
+  .betting-odds-2024 td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
   }
+  
+  .betting-odds-2024 tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .betting-odds-2024 tr:hover {
+    background-color: rgba(26, 115, 232, 0.05) !important;
+  }
+  
+  .betting-odds-2024 td {
+    position: relative;
+    z-index: 1;
+  }
+ 
   
