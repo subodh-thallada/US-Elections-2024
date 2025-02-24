@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 // Replace with your actual API key
-const GOOGLE_MAPS_API_KEY = 'AIzaSyD5jBbxTqK1YdsFRg-ebZK-0s1EXvXpZq0';
+const GOOGLE_MAPS_API_KEY = '####---- ENTER KEY ----####';
 
 const StateSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
